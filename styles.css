@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --pale_blue: hsl(225, 100%, 94%);
+  --bright_blue: hsl(245, 75%, 52%);
+  --very_pale_blue: hsl(225, 100%, 98%);
+  --desaturated_blue: hsl(224, 23%, 55%);
+  --dark_blue: hsl(223, 47%, 23%);
+
+  font-size: 10px;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+
+/* Body background */ 
+
+body{
+    background: var(--pale_blue) url(/images/pattern-background-desktop.svg) no-repeat top;
+    background-size: 100%;
+    text-align: center; 
+}
+
+/* Card */ 
+.card{
+    width: 42rem;
+    margin: 10rem auto;
+    height: 70rem;
+    background-color: white;
+    border-radius: 7%;
+}
+
+.card-img{ 
+    width: 100%;
+    height: 20rem;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    object-fit: fill;
+}
+
+.card-title{
+    font-weight: 900;
+    color: var(--dark_blue);
+    font-size: 2.5rem;
+    margin-top: 4rem;
+}
+
+.card-copy{
+    color: var(--desaturated_blue);
+    font-size: 1.8rem;
+    padding: 1.5rem 7.2rem;
+}
+
+.card-info{
+    background-color: var(--very_pale_blue);
+    width: 30rem;
+    height: 3rem;
+    margin: auto;
+    display: flex;
+    padding: 3rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 20px;;
+
+}
+
+.card-info-price{
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+.card-info-price h4{
+    font-size: 2rem;
+    font-weight: 900;
+    padding-top: 0;
+    margin-bottom: 0;
+}
+
+.card-info-price p{
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: var(--desaturated_blue)
+
+}
+
+.card-col:nth-child(1){
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card-col:nth-child(2) a{
+    font-size: 1.6rem;
+}
+
+.music{
+    width: 6rem;
+    height: 6rem;
+}
+
+.card-proceed{
+    display: block;
+    margin: 27px auto;
+    background-color: var(--bright_blue);
+    width: 80%;
+    padding: 2rem;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    color: #FFF;
+    font-weight: 700;
+    box-shadow: 0 2.2rem 2.6rem var(--very_pale_blue);
+}
+
+.card-cancel{ 
+    font-size: 1.8rem;
+    color: var(--desaturated_blue);
+    font-weight: 700;
+    text-decoration: none;
+}
